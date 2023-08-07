@@ -1,0 +1,6 @@
+abs_path_ca: /opt/ca/ca.crt
+abs_path_ca_key: /opt/ca/ca.key
+workspace: /opt/ca/certs
+signer: localhost
+allowips:
+  - {{some-allowed-ip}}

@@ -1,0 +1,12 @@
+servers:
+  hosts:
+    infrastructure1.scify.org:
+      domain_name: exporter.infrastructure1.scify.org
+      ansible_port: {{ some-port }}
+  vars:
+    ansible_user: {{some - user}}
+
+localhost:
+  vars:
+    ansible_user: ansible_user
+    ansible_connection: local

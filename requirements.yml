@@ -1,0 +1,6 @@
+
+# from GitHub, overriding the name and specifying a specific tag
+- src: git+ssh://git@bitbucket.scify.org:60010/an/self-signed-certificates.git
+#   # version: v0.1
+# #  name: nginx_role
+- src: git+ssh://git@bitbucket.scify.org:60010/an/node-exporter.git

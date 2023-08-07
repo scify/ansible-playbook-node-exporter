@@ -1,0 +1,20 @@
+---
+- name: Update web servers
+  hosts: all
+  become: true
+  gather_facts: true
+  vars_files:
+    - developer_input_vars.yml
+    - vars.yml
+  
+  tasks:
+    - name: Include certificates
+      ansible.builtin.include_role:
+        name: self-signed-certificates
+        apply:
+          become: true
+    - name: Include exporter
+      ansible.builtin.include_role:
+        name: node-exporter
+        apply:
+          become: true
